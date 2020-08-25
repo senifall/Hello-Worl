@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Hello You</title>
+    <link rel="stylesheet" href="hello.css" />
+  </head>
+  <body>
+    <div class="container">
+      <h1>Hello, World</h1>
+      <h2>Hope you're having a great day</h2>
+      <h4>What's your name?</h4>
+      <form action="">
+        <input type="text" id="input" />
+        <button type="text">Submit</button>
+      </form>
+    </div>
+  </body>
+  <script>
+    let h1 = document.getElementsByTagName('h1')[0];
+    let form = document.getElementsByTagName('form')[0];
+    form.addEventListener('submit', sayHello);
+    function sayHello(e) {
+      e.preventDefault();
+      let input = document.querySelector('#input');
+      h1.innerText = `Hello, ${input.value}`;
+      input.value = '';
+    }
+  </script>
+</html>

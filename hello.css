@@ -1,0 +1,21 @@
+body {
+  background-color: indigo;
+}
+.container {
+  margin: 200px;
+  text-align: center;
+}
+
+h1 {
+  color: green;
+  font-size: 75px;
+  font-weight: 900;
+}
+h2,
+h4 {
+  color: white;
+}
+
+form {
+  padding-top: 20px;
+}
